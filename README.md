@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/padosoft/migrate-cloudflare-rules.svg?style=flat-square)](https://packagist.org/packages/padosoft/migrate-cloudflare-rules)
 [![Tests](https://img.shields.io/github/actions/workflow/status/padosoft/migrate-cloudflare-rules/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/padosoft/migrate-cloudflare-rules/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/padosoft/migrate-cloudflare-rules.svg?style=flat-square)](https://packagist.org/packages/padosoft/migrate-cloudflare-rules)
-[![License](https://img.shields.io/packagist/l/padosoft/migrate-cloudflare-rules.svg?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/github/license/padosoft/migrate-cloudflare-rules.svg?style=flat-square)](LICENSE)
 
 `padosoft/migrate-cloudflare-rules` adds a single Artisan command, `cloudflare:migrate`, to your Laravel 12+ application.
 The command **copies Cloudflare security configuration from one zone/account (the *source*) to another zone/account (the *destination*)** using the Cloudflare REST API v4:
