@@ -1,0 +1,76 @@
+{
+    "name": "padosoft/migrate-cloudflare-rules",
+    "description": "Laravel Artisan command to migrate Cloudflare security rules (WAF custom rules, IP Access Rules, User Agent Blocking rules, Rate Limiting rules, Custom Lists and Page Rules) from one zone/account to another.",
+    "keywords": [
+        "padosoft",
+        "laravel",
+        "cloudflare",
+        "cloudflare-api",
+        "waf",
+        "firewall",
+        "migration",
+        "page-rules",
+        "rate-limiting",
+        "ip-access-rules",
+        "custom-lists",
+        "artisan"
+    ],
+    "homepage": "https://github.com/padosoft/migrate-cloudflare-rules",
+    "license": "Apache-2.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Lorenzo Padovani",
+            "email": "helpdesk@padosoft.com",
+            "homepage": "https://www.padosoft.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/padosoft/migrate-cloudflare-rules/issues",
+        "source": "https://github.com/padosoft/migrate-cloudflare-rules"
+    },
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.8|^8.0",
+        "illuminate/console": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^11.5|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Padosoft\\MigrateCloudflareRules\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Padosoft\\MigrateCloudflareRules\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Padosoft\\MigrateCloudflareRules\\MigrateCloudflareRulesServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/pint"
+    }
+}
